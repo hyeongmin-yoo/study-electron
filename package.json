@@ -1,0 +1,24 @@
+{
+  "name": "study-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "dev": "FORCE_COLOR=1 turbo dev",
+    "dev:app": "pnpm --filter \"electron\" dev:app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "turbo": "^1.7.0"
+  },
+  "packageManager": "yarn@3.3.1"
+}

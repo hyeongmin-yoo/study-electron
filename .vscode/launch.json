@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Electron",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/apps/electron",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electronmon",
+      "args": [".", "--remote-debugging-port=9222"],
+      "outputCapture": "std",
+      "console": "internalConsole",
+      "sourceMaps": true
+    },
+    {
+      "name": "Web",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}/apps/web",
+      "restart": true
+    }
+  ]
+}
